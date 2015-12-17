@@ -2,15 +2,15 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-pushnotification-parsepushnotification"
-    version="1.0.32">
+    version="2.0.0">
 
     <name>Cordova Parse Push Notification plugin</name>
     <description>Cordova Parse Push Notification plugin</description>
     <author>Sang Ki Kwon (Cranberrygame)</author>
     <license>MIT</license>
     <keywords>cordova,plugin,pushnotification,parse,promotion,advanced</keywords>
-    <repo>https://github.com/cranberrygame/cordova-plugin-pushnotification-parsepushnotification</repo>
-    <issue>https://github.com/cranberrygame/cordova-plugin-pushnotification-parsepushnotification/issues</issue>
+    <repo>https://github.com/furins/cordova-plugin-pushnotification-parsepushnotification</repo>
+    <issue>https://github.com/furins/cordova-plugin-pushnotification-parsepushnotification/issues</issue>
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
@@ -23,13 +23,13 @@
     <platform name="android">
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="ParsePushNotificationPlugin">
-				<param name="android-package" value="com.cranberrygame.cordova.plugin.pushnotification.parsepushnotification.ParsePushNotificationPlugin" />
+				<param name="android-package" value="com.furins.cordova.plugin.pushnotification.parsepushnotification.ParsePushNotificationPlugin" />
 			</feature>
 		</config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<service android:name="com.parse.PushService" />
-            <receiver android:name="com.cranberrygame.cordova.plugin.pushnotification.parsepushnotification.ParseBroadcastReceiver">
+            <receiver android:name="com.furins.cordova.plugin.pushnotification.parsepushnotification.ParseBroadcastReceiver">
                 <intent-filter>
                     <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
                     <action android:name="android.intent.action.USER_PRESENT"/>
@@ -73,8 +73,8 @@
         <source-file src="src/android/Parse-1.9.4.jar" target-dir="libs" />
 		<source-file src="src/android/ParseCrashReporting-1.9.4.jar" target-dir="libs" />
 		<source-file src="src/android/ParseFacebookUtilsV4-1.9.4.jar" target-dir="libs" />
-        <source-file src="src/android/ParsePushNotificationPlugin.java" target-dir="src/com/cranberrygame/cordova/plugin/pushnotification/parsepushnotification" />
-        <source-file src="src/android/ParseBroadcastReceiver.java" target-dir="src/com/cranberrygame/cordova/plugin/pushnotification/parsepushnotification" />
+        <source-file src="src/android/ParsePushNotificationPlugin.java" target-dir="src/com/furins/cordova/plugin/pushnotification/parsepushnotification" />
+        <source-file src="src/android/ParseBroadcastReceiver.java" target-dir="src/com/furins/cordova/plugin/pushnotification/parsepushnotification" />
      </platform>
 
     <!-- ios -->

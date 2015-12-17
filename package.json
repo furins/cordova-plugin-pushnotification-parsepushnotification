@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-pushnotification-parsepushnotification",
-  "version": "1.0.32",
+  "version": "2.0.0",
   "description": "Cordova Parse Push Notification plugin",
   "cordova": {
     "id": "cordova-plugin-pushnotification-parsepushnotification",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cranberrygame/cordova-plugin-pushnotification-parsepushnotification.git"
+    "url": "git+https://github.com/furins/cordova-plugin-pushnotification-parsepushnotification.git"
   },
   "keywords": [
     "cordova",
@@ -32,10 +32,10 @@
       "version": ">=3.0.0"
     }
   ],
-  "author": "cranberrygame",
+  "author": "furins",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cranberrygame/cordova-plugin-pushnotification-parsepushnotification/issues"
+    "url": "https://github.com/furins/cordova-plugin-pushnotification-parsepushnotification/issues"
   },
-  "homepage": "https://github.com/cranberrygame/cordova-plugin-pushnotification-parsepushnotification#readme"
+  "homepage": "https://github.com/furins/cordova-plugin-pushnotification-parsepushnotification#readme"
 }
